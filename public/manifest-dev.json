@@ -3,28 +3,17 @@
   "api": [
     {
       "url": "http://localhost:3400/api/clothes",
-      "name": "recommendClothes",
-      "description": "根据用户的心情，给用户推荐他有的衣服",
+      "name": "ali-wanx",
+      "description": "根据用户输入的描述，生成合适的图片",
       "parameters": {
-        "properties": {
-          "mood": {
-            "description": "用户当前的心情，可选值有：开心（happy）, 难过（sad）,生气 （anger）,害怕（fear）,惊喜（ surprise）,厌恶 （disgust）",
-            "enum": ["happy", "sad", "anger", "fear", "surprise", "disgust"],
-            "type": "string"
-          },
-          "gender": {
-            "type": "string",
-            "enum": ["man", "woman"],
-            "description": "对话用户的性别，需要询问用户后才知道这个信息"
-          }
-        },
-        "required": ["mood", "gender"],
+        "properties": {},
+        "required": [],
         "type": "object"
       }
     }
   ],
-  "author": "LobeHub",
-  "createdAt": "2023-09-03",
+  "author": "alps",
+  "createdAt": "2024-07-10",
   "gateway": "http://localhost:3400/api/gateway",
   "homepage": "https://github.com/lobehub/chat-plugin-template",
   "identifier": "plugin-identifier",
