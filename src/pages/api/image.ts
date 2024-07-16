@@ -1,6 +1,7 @@
 import { PluginErrorType, createErrorResponse } from '@lobehub/chat-plugin-sdk';
 import axios from 'axios';
 
+import { useImageDispatch } from '@/store/hooks';
 import { ImgReqData, ImgRespData, ImgStatusRespData } from '@/type';
 
 export const config = {
@@ -80,12 +81,12 @@ export default async (req: Request) => {
     }
     const target = result?.results;
     console.log();
-    if (target)
-      return new Response(
-        JSON.stringify({
-          imgUrl: target[0].url,
-        }),
-      );
+    if (target) useImageDispatch();
+    return new Response(
+      JSON.stringify({
+        imgUrl: target[0].url,
+      }),
+    );
   }
   return new Response(JSON.stringify(reqData));
 };

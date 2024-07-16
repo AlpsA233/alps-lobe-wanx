@@ -29,7 +29,7 @@
     "description": "This is the plugin template for LobeChat plugin development"
   },
   "ui": {
-    "url": "http://localhost:3400",
+    "url": "http://localhost:3400/iframe/image",
     "height": 200
   },
   "version": "1"
