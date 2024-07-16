@@ -6,7 +6,12 @@
       "name": "ali-wanx",
       "description": "根据用户输入的描述，生成合适的图片",
       "parameters": {
-        "properties": {},
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "描述"
+          }
+        },
         "required": [],
         "type": "object"
       }

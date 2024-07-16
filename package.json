@@ -57,6 +57,7 @@
     "@lobehub/ui": "latest",
     "antd": "^5",
     "antd-style": "^3",
+    "axios": "^1.7.2",
     "dayjs": "^1",
     "next": "13.4.7",
     "react": "^18",
